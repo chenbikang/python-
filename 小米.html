@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>小米官网</title>
+	<style type="text/css">
+            /*公共的css样式*/
+            div,ul,li,a{margin: 0px;padding: 0px;}
+            ul{list-style: none;}
+            .clear{clear:both;width:100%;height:5px;}
+            .nav{background-color:rgb(70,70,70);height: 30px;line-height:30px;}
+            .nav a{
+            	color: rgb(224,224,224);
+            	font-size:13px;
+            	font-family:"黑体";
+            	text-decoration: none;
+            	text-align: center;
+            	}
+            .nav a:hover{color:white}
+            .nav span{color: rgb(146,146,146);}
+            .nav-right{color:rgb(224,224,224);float: right;margin-right: 10px}
+            .nav img{float: right;padding-top:5px;padding-right: 5px;}
+            #topo{
+                width:100%;height:50px;
+                margin-right: 20px;
+                margin-left: 23px;
+            }
+            #topo ul li{
+                width:40px;
+                float:left;
+                line-height:50px;
+                margin-left:15px;
+            }
+            #topo ul li a{
+                color:black;
+                text-decoration: none;
+                line-height: 50px;
+                font-size: 14px;
+                text-align: center;
+                width:60px;
+                height:50px;
+                display: block;
+            }
+            #topo img{
+                float: left;
+            }
+            #sousuo:hover{
+                background: grey;
+            }
+            #container{width:1200px;margin:0px auto;}
+
+            #main{width:100%;}
+            
+            #article{width:900px;height:600px;float:right;
+                overflow:hidden;position: relative;}
+
+
+            #list {
+                white-space:nowrap;
+                -webkit-animation:animations 60s infinite linear;
+                }
+                
+            @-webkit-keyframes animations{
+                0%{-webkit-transform:translate(0);opacity:1;} 
+                25%{-webkit-transform:translate(900);opacity:1;}
+                50%{-webkit-transform:translate(1800);opacity:1;}
+                70%{-webkit-transform:translate(1800);opacity:1;}
+                75%{-webkit-transform:translate(2700);opacity:1;}
+                95%{-webkit-transform:translate(2700);opacity:1;}
+                100%{-webkit-transform:translate(3600px);opacity:1;}
+            }
+            #list li{float: right;}
+
+            #list:hover {
+                    -webkit-animation-play-state: paused; /*动画暂停播放*/
+                }
+
+            #aside{width:292px;height:600px;float:left;background-color:rgba(52,52,52,50);}
+
+            #footer{width:100%;height:70px;margin-top:5px;background-color:#8fbc8f; }
+
+            ul.fenlei li {width:257px; height:25px; margin-top: 30px;padding-left: 35px;}
+
+            ul.fenlei li:hover{background: orange;background-size:cover;}
+
+            ul.fenlei li a{ color: white;text-decoration: none;}
+
+            .fenlan ul li {width: 300px;height: 161px;float: left;margin: 5px}
+            .fenlan ul ul li{text-align: center;}
+            .fenlan ul ul li a{text-decoration: none;color: white}
+
+	</style>
+
+</head>
+<body> 
+      <div class="nav">
+            <a href="/#">小米商城</a>
+            <span class="sep">|</span>
+            <a href="#">MIUI</a>
+            <span class="sep">|</span>
+            <a  href="#">IoT</a>
+            <span class="sep">|</span>
+            <a href="#">云服务</a>
+            <span class="sep">|</span>
+            <a href="#">金融</a>
+            <span class="sep">|</span>
+            <a href="#">有品</a>
+            <span class="sep">|</span>
+            <a href="#">小爱开放平台</a>
+            <span class="sep">|</span>
+            <a href="#">政企服务</a>
+            <span class="sep">|</span>
+            <a href="#">下载app</a>
+            <span class="sep">|</span>
+            <a href="#">Select Region</a>
+	        <a class="nav-right" href="#">登录</a>
+	        <span class="nav-right">|</span>
+	        <a class="nav-right" href="#">注册</a>
+	        <span class="sep">|</span>
+	        <a class="nav-right" href="#">购物车（0）</a>
+	        <img src="./images/gouwuche.png" height="20px" title="购物车">
+      </div>
+      <div class="clear"></div>
+      <div id="topo">
+            <img src=".\images\shangbiao.jpg" width="56px" height="56px"/>
+            <ul>
+                <li><a style="padding-left:300px;" href="#">小米手机</a></li>
+                <li><a style="padding-left:300px;" href="#">红米</a></li>
+                <li><a style="padding-left:300px;" href="#">电视</a></li>
+                <li><a style="padding-left:300px;" href="#">笔记本</a></li>
+                <li><a style="padding-left:300px;" href="#">空调</a></li>
+                <li><a style="padding-left:300px;" href="#">新品</a></li>
+                <li><a style="padding-left:300px;" href="#">路由器</a></li>
+                <li><a style="padding-left:300px;" href="#">智能硬件</a></li>
+                <li><a style="padding-left:300px;" href="#">服务</a></li>
+                <li><a style="padding-left:300px;" href="#">社区</a></li>
+            </ul>
+            <input style="float: right;width: 180px;height: 30px;margin-right: 40px;margin-top: 10px;" type="text" name="sousuozhi"/>
+            <img id="sousuo" style="float: right;margin-right: 5px;margin-top: 20px" src=".\images\sousuo.png" width="20px" height="20px"/>
+        </div>
+        <div id="container">
+            <div class="clear"></div>
+            <div id="main">
+                <div id="article">
+                    <ul id="list">
+                    <li style="position: absolute;left: -2700px"><img id="a1" src=".\images\daping1.jpg" width="900px" height="600px"></li>
+                    <li style="position: absolute;left: -1800px"><img id="a2" src=".\images\daping2.jpg" width="900px" height="600px"></li>
+                    <li style="position: absolute;left: -900px"><img id="a3" src=".\images\daping3.jpg" width="900px" height="600px"></li>
+                    <li style="position: absolute;left: 0px"><img id="a4" src=".\images\daping4.jpg" width="900px" height="600px"></li>
+                    <li style="position: absolute;left: -3600px"><img id="a1" src=".\images\daping4.jpg" width="900px" height="600px"></li>
+                    </ul>
+                </div>
+                <div id="aside">
+                    <ul class="fenlei">
+                        <li><a href="#">手机 电话卡</a></li>
+                        <li><a href="#">电视盒子</a></li>
+                        <li><a href="#">笔记本 平板</a></li>
+                        <li><a href="#">家电 插线板</a></li>
+                        <li><a href="#">出行 穿戴</a></li>
+                        <li><a href="#">智能路由器</a></li>
+                        <li><a href="#">电脑配件</a></li>
+                        <li><a href="#">健康 儿童</a></li>
+                        <li><a href="#">耳机 音箱</a></li>
+                        <li><a href="#">生活 箱包</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="fenlan">
+                    <ul>
+                        <ul style="width: 300px;height: 161px; background-color:orange;list-style: none;float: left;margin-top: 5px">
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px"><a href="#">选购手机</a></li>
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px"><a href="#">企业团购</a></li>
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px "><a href="#">F码通道</a></li>
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px"><a href="#">米粉卡</a></li>
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px"><a href="#">以旧换新</a></li>
+                            <li style="width: 98px;height: 78px;display: inline;border: 0.1px solid;margin: 0.1px"><a href="#">话费充值</a></li>
+                        </ul>
+                        <li><img id="b2" src=".\images\fenlan1.jpg" width="300px" height="161px"></li>
+                        <li><img id="b3" src=".\images\fenlan2.jpg" width="300px" height="161px"></li>
+                        <li><img id="b4" src=".\images\fenlan3.jpg" width="300px" height="161px"></li>
+                    </ul>
+        </div>
+        <div id="footer" style="clear: both"></div>
+</body>
+</html>
